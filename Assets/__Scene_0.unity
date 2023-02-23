@@ -297,6 +297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67e7dd73fc2dfd4ab8ead3f6fafed2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boundsType: 1
+  radius: 4
   camWidth: 0
   camHeight: 0
 --- !u!1 &963194225
