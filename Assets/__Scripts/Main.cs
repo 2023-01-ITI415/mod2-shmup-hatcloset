@@ -21,7 +21,7 @@ public class Main : MonoBehaviour
         bndCheck = GetComponent<BoundsCheck>();
 
         // Invoke SpawnEnemy() once (in 2 seconds, based on default values)
-        invoke(nameof(SpawnEnemy), 1f / enemySpawnPerSeconds);
+        Invoke(nameof(SpawnEnemy), 1f / enemySpawnPerSecond);
     }
 
     public void SpawnEnemy()
@@ -34,7 +34,7 @@ public class Main : MonoBehaviour
         float enemyInset = enemyInsetDefault;
         if (go.GetComponent<BoundsCheck>() != null)
         {
-            enemyInset = Mathf.Abs(go.GetComponent < BoundsCheck().radius);
+            enemyInset = Mathf.Abs(go.GetComponent <BoundsCheck>().radius);
         }
 
         // Set the initial position for the spawned Enemy
@@ -46,6 +46,6 @@ public class Main : MonoBehaviour
         go.transform.position = pos;
 
         // Invoke SpawnEnemy() again
-        invoke(nameof(SpawnEnemy), 1f / enemySpawnPerSecond);
+        Invoke(nameof(SpawnEnemy), 1f / enemySpawnPerSecond);
     }
 }
