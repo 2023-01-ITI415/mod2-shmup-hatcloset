@@ -49,6 +49,7 @@ public class Hero : MonoBehaviour
     {
         Transform rootT = other.gameObject.transform.root;
         GameObject go = rootT.gameObject;
+        Debug.Log("Shield Trigger hit by: " + go.name);
 
         // Make sure it's not the dame triggering go as last time
         if (go == lastTriggerGo) return;
