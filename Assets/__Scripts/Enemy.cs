@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireCOmponent( typeof(BoundsCheck))]
+[RequireComponent( typeof(BoundsCheck))]
 public class Enemy : MonoBehaviour
 {
     [Header("Inscribed")]
